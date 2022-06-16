@@ -245,6 +245,7 @@ class WebsiteTest {
         var wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         var modal = wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("NewsletterModal"))));
 
+        wait.until(d -> modal.getCssValue("opacity").equals("1"));
         // Felesleges, hiszen a wait úgyis TimeoutException-t dobna, ha nem jelenne meg
         assertTrue(modal.isDisplayed());
 
