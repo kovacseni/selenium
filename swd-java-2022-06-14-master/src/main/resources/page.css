@@ -1,0 +1,16 @@
+h1 {
+    color: red;
+}
+
+.important-p {
+    color: green;
+}
+
+.product {
+    text-decoration-line: underline;
+}
+
+.lorem:first-line {
+    color:blueviolet;
+    border-left: 10px;
+}

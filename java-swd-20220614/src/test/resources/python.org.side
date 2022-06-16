@@ -1,0 +1,90 @@
+{
+  "id": "a269291f-7d4c-4574-9d05-93f501847be2",
+  "version": "2.0",
+  "name": "python.org",
+  "url": "https://www.python.org",
+  "tests": [{
+    "id": "8ea7afba-aac1-4238-be0a-a4d1e425247f",
+    "name": "test_search",
+    "commands": [{
+      "id": "7659075d-2f27-44fb-a8e9-499124593f42",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0df804c-3bbf-407d-bd67-b8cef6ebd705",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9eecb06a-d9bb-482c-9b3f-bb0b019d4e51",
+      "comment": "",
+      "command": "click",
+      "target": "id=id-search-field",
+      "targets": [
+        ["id=id-search-field", "id"],
+        ["name=q", "name"],
+        ["css=#id-search-field", "css:finder"],
+        ["xpath=//input[@id='id-search-field']", "xpath:attributes"],
+        ["xpath=//div[@id='touchnav-wrapper']/header/div/div/div/form/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f779b0fd-4b53-4792-b117-f3206df10e6e",
+      "comment": "",
+      "command": "type",
+      "target": "id=id-search-field",
+      "targets": [
+        ["id=id-search-field", "id"],
+        ["name=q", "name"],
+        ["css=#id-search-field", "css:finder"],
+        ["xpath=//input[@id='id-search-field']", "xpath:attributes"],
+        ["xpath=//div[@id='touchnav-wrapper']/header/div/div/div/form/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testing"
+    }, {
+      "id": "f56f350c-923a-4b61-9c58-a1893bcaf380",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["name=submit", "name"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='touchnav-wrapper']/header/div/div/div/form/fieldset/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'GO')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1155254-831d-42b9-a2be-6847a45db875",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h3:nth-child(2)",
+      "targets": [
+        ["css=h3:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div/section/form/h3", "xpath:idRelative"],
+        ["xpath=//form/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Results')]", "xpath:innerText"]
+      ],
+      "value": "Results"
+    }]
+  }],
+  "suites": [{
+    "id": "ab2e0374-3ad2-40ec-a57d-0264c62a256f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8ea7afba-aac1-4238-be0a-a4d1e425247f"]
+  }],
+  "urls": ["https://www.python.org/"],
+  "plugins": []
+}
